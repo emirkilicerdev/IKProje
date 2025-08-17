@@ -55,8 +55,3 @@ ng serve
 ## Katkıda Bulunma
 
 Projeye katkıda bulunmak için pull request gönderebilir veya issue açabilirsiniz.
-
-## Lisans
-
-Bu proje MIT Lisansı ile lisanslanmıştır.
-
