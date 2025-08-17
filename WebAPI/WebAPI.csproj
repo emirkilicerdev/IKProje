@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BCrypt.Net için -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    
+    <!-- JWT Kimlik Doğrulama için - .NET 8.0 ile uyumlu sürüm -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" /> 
+    
+    <!-- Entity Framework Core - SQL Server Sağlayıcısı - .NET 8.0 ile uyumlu sürüm -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <!-- Entity Framework Core - Design (Migrations için) - .NET 8.0 ile uyumlu sürüm -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <!-- Entity Framework Core - Tools (Migrations için) - .NET 8.0 ile uyumlu sürüm -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    
+    <!-- Swagger/OpenAPI için -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    
+    <!-- JWT Token işleme için - .NET 8.0 ile uyumlu sürüm -->
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.2" /> 
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
